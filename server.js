@@ -1,7 +1,10 @@
-var express = require('express');
-var app = express();
+'use strict';
 
-app.get('/', function(request, response){
+const express = require('express');
+
+const app = express();
+
+app.get('/', (request, response) => {
     response.send('Hello MGT-656!');
 });
 
